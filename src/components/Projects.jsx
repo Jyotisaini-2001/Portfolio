@@ -35,7 +35,7 @@ const Projects = () => {
             <div className='flex flex-col gap-1 mt-2'>
               <h5 className='mx-auto font-bold font-poppins'>{content.title}</h5>
               <button className="font-bold text-gray self-end"> 
-              <a href="">read more</a> </button>
+              <a href={content.link}>read more</a> </button>
             </div>
              
           </SwiperSlide>

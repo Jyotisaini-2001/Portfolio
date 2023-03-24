@@ -2,7 +2,7 @@
 import Hero_person from "./assets/images/Hero/person.jpeg";
 
 
-import Git from "./assets/images/Skills/git.png";
+import Git from "./assets/images/Skills/Git.png";
 import github from "./assets/images/Skills/github.png";
 import reactjs from "./assets/images/Skills/react.png";
 import Coding from "./assets/images/Skills/c++.png";

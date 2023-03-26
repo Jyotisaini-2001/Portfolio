@@ -44,7 +44,7 @@ const Hero = () => {
         </h2>
         <br/>
         <div className="flex justify-end">
-          <a href=""><button className="btn"> {hero.btnText}</button></a>
+          <a href="https://docs.google.com/document/d/1v27S1AvZxka8XqyUeB3DdXrZnkUNBg8y31LUWOiLYDs/edit?usp=sharing"><button className="btn"> {hero.btnText}</button></a>
           
         </div>
         <div  className="flex flex-col gap-5 mt-10">

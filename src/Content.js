@@ -15,6 +15,7 @@ import services_logo3 from "./assets/images/Services/logo3.png";
 import project1 from "./assets/images/Projects/portfolio.png";
 import project2 from "./assets/images/Projects/website.png";
 import project3 from "./assets/images/Projects/weather.jpg";
+import project4 from "./assets/images/Projects/project4.jpg";
 import person_project from "./assets/images/Projects/person.jpeg";
 
 
@@ -151,6 +152,12 @@ export const content = {
         image: project3,
 
          link: "https://jyotisaini-2001.github.io/Weather-App/"
+      },
+      {
+        title: "Note App",
+        image: project4,
+
+         link: "https://mynotes-f2239.web.app/home"
       },
     ],
   },

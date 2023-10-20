@@ -136,14 +136,17 @@ export const content = {
       {
         title: "Portfolio Website",
         image: project1,
+        link: "https://jyotisaini-2001.github.io/Portfolio/"
       },
       {
         title: "Udaan Magazine Website",
         image: project2,
+        link: "https://jyotisaini-2001.github.io/Portfolio/"
       },
       {
         title: "Weather App",
         image: project3,
+        link: "https://jyotisaini-2001.github.io/Portfolio/"
       },
     ],
   },

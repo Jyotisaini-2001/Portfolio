@@ -3,12 +3,54 @@ import linkdin_icon from "../assets/images/Hero/linkedin.png";
 import github_icon from "../assets/images/Hero/github.png";
 import twitter_icon from "../assets/images/Hero/twitter.png";
 import leetcode_icon from "../assets/images/Hero/leetcode.png";
+async function handleDownloadResume() {
+  const email = prompt("Please enter your email address");
+  if (!email) return;
+
+  try {
+    const response = await fetch('http://localhost:3000/resume', {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json' },
+    });
+
+    if (response.ok) {
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(new Blob([blob]));
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', 'Resume.pdf');
+      document.body.appendChild(link);
+      link.click();
+      link.parentNode.removeChild(link);
+
+      // Send email to specific recipient
+      const emailResponse = await fetch('http://localhost:3000/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email })
+      });
+      if (emailResponse.ok) {
+        console.log('Email sent');
+      } else {
+        console.error('Error sending email');
+      }
+    } else {
+      throw new Error('Network response was not ok.');
+    }
+  } catch (error) {
+    console.error('Error fetching resume:', error);
+  }
+}
+
+
+
 
 
 const Hero = () => {
   const {hero} =content;
   
   return(
+    
    <section id="home" className="overflow-hidden">
     <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-end justify-center items-center ">
      
@@ -44,7 +86,7 @@ const Hero = () => {
         </h2>
         <br/>
         <div className="flex justify-end">
-          <a href=""><button className="btn"> {hero.btnText}</button></a>
+          <a href=""><button className="btn" onClick={handleDownloadResume}> {hero.btnText}</button></a>
           
         </div>
         <div  className="flex flex-col gap-5 mt-10">

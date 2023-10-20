@@ -2,7 +2,7 @@
 import Hero_person from "./assets/images/Hero/person.jpeg";
 
 
-import Git from "./assets/images/Skills/git.png";
+import Git from "./assets/images/Skills/Git.png";
 import github from "./assets/images/Skills/github.png";
 import reactjs from "./assets/images/Skills/react.png";
 import Coding from "./assets/images/Skills/c++.png";
@@ -12,10 +12,10 @@ import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
 import services_logo3 from "./assets/images/Services/logo3.png";
 
-import project1 from "./assets/images/projects/portfolio.webp";
-import project2 from "./assets/images/projects/website.png";
-import project3 from "./assets/images/projects/weather.jpg";
-import person_project from "./assets/images/projects/person.jpeg";
+import project1 from "./assets/images/Projects/portfolio.png";
+import project2 from "./assets/images/Projects/website.png";
+import project3 from "./assets/images/Projects/weather.jpg";
+import person_project from "./assets/images/Projects/person.jpeg";
 
 
 
@@ -137,22 +137,26 @@ export const content = {
         title: "Portfolio Website",
         image: project1,
         link: "https://jyotisaini-2001.github.io/Portfolio/"
+
+        
+
       },
       {
         title: "Udaan Magazine Website",
         image: project2,
-        link: "https://jyotisaini-2001.github.io/Portfolio/"
+        link: "https://udaanggv.com/"
       },
       {
         title: "Weather App",
         image: project3,
-        link: "https://jyotisaini-2001.github.io/Portfolio/"
+
+         link: "https://jyotisaini-2001.github.io/Weather-App/"
       },
     ],
   },
  
   Contact: {
-    title: "Contect Me",
+    title: "Contact Me",
     subtitle: "GET IN TOUCH",
     social_media: [
       {

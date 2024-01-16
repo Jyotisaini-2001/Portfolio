@@ -1,11 +1,12 @@
 {
   "name": "react_portfolio",
+  "homepage": "https://Jyotisaini-2001.github.io/react_portfolio",
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
     "dev": "vite --host",
+       "predeploy": "npm run build",
+   "deploy": "gh-pages -d build",
     "build": "vite build",
     "preview": "vite preview",
     "build:css": "postcss src/css/tailwind.css -o src/css/main.css"

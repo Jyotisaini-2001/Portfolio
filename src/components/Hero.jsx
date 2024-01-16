@@ -75,7 +75,7 @@ const AppBanner = () => {
 					src={
 						activeTheme === 'dark' ? developerLight : developerDark
 					}
-					alt="Developer" className='w-screen mt-12'
+					alt="coder" className='w-screen mt-12'
 				/>
 			</motion.div>
 		</motion.section>

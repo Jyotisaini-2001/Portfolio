@@ -2,6 +2,7 @@
 import Hero_person from "../assets/images/Hero/person.jpeg";
 
 
+<<<<<<< HEAD:src/content/Content.js
 import Git from "../assets/images/Skills/git.png";
 import github from "../assets/images/Skills/github.png";
 import reactjs from "../assets/images/Skills/react.png";
@@ -15,6 +16,23 @@ import services_logo1 from "../assets/images/Services/logo1.png";
 import services_logo2 from "../assets/images/Services/logo2.png";
 import services_logo3 from "../assets/images/Services/logo3.png";
 
+=======
+import Git from "./assets/images/Skills/Git.png";
+import github from "./assets/images/Skills/github.png";
+import reactjs from "./assets/images/Skills/react.png";
+import Coding from "./assets/images/Skills/c++.png";
+import python from "./assets/images/Skills/python.png";
+import js from "./assets/images/Skills/js.png";
+import services_logo1 from "./assets/images/Services/logo1.png";
+import services_logo2 from "./assets/images/Services/logo2.png";
+import services_logo3 from "./assets/images/Services/logo3.png";
+
+import project1 from "./assets/images/Projects/portfolio.png";
+import project2 from "./assets/images/Projects/website.png";
+import project3 from "./assets/images/Projects/weather.jpg";
+import project4 from "./assets/images/Projects/project4.jpg";
+import person_project from "./assets/images/Projects/person.jpeg";
+>>>>>>> eb7675939fbc3790e5e680c3b99a53ed614c79c0:src/Content.js
 
 
 
@@ -149,10 +167,45 @@ export const content = {
       },
     ],
   },
+<<<<<<< HEAD:src/content/Content.js
  
+=======
+  Projects: {
+    title: "Projects",
+    subtitle: "MY CREATION",
+    image: person_project,
+    project_content: [
+      {
+        title: "Portfolio Website",
+        image: project1,
+        link: "https://jyotisaini-2001.github.io/Portfolio/"
+
+        
+
+      },
+      {
+        title: "Udaan Magazine Website",
+        image: project2,
+        link: "https://udaanggv.com/"
+      },
+      {
+        title: "Weather App",
+        image: project3,
+
+         link: "https://jyotisaini-2001.github.io/Weather-App/"
+      },
+      {
+        title: "Note App",
+        image: project4,
+
+         link: "https://mynotes-f2239.web.app/home"
+      },
+    ],
+  },
+>>>>>>> eb7675939fbc3790e5e680c3b99a53ed614c79c0:src/Content.js
  
   Contact: {
-    title: "Contect Me",
+    title: "Contact Me",
     subtitle: "GET IN TOUCH",
     social_media: [
       {

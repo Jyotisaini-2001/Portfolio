@@ -1,9 +1,5 @@
 // import components
 import Skills from "./components/Skills";
-<<<<<<< HEAD
-=======
-
->>>>>>> 5334bc87e626f655204809058ac5317667de0458
 import { AnimatePresence } from 'framer-motion';
 import Experiences from "./components/Experiences";
 import Projects from "./components/Projects";

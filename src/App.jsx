@@ -1,16 +1,19 @@
 // import components
-import Hero from "./components/Hero";
 import Skills from "./components/Skills";
+import './css/app.css';
+import { AnimatePresence } from 'framer-motion';
 import Experiences from "./components/Experiences";
 import Projects from "./components/Projects";
+import { lazy, Suspense } from 'react';
 import Contact from "./components/Contact";
 import Navbar from "./Layouts/Navbar";
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Footer from './components/footer.jsx';
 
 import { useEffect } from "react";
-// Animation package
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Home from "./components/Home.jsx";
 
 const App = () => {
   useEffect(() => {
@@ -22,18 +25,30 @@ const App = () => {
   }, []);
 
   return (
-    <div className="">
-       <Navbar />
-      <Hero />
-      <Skills />
-      <Experiences />
-      <Projects />
-      <Contact />
-      <footer className="p-3 text-center">
-        <h6 className="mb-3">Jyoti Saini</h6>
-        <p> @All CopyRights Reserved 2023</p>
-      </footer>
-    </div>
+    
+      <AnimatePresence>
+			<div className=" bg-secondary-light dark:bg-primary-dark transition duration-300">
+				<Router>
+          <Navbar/>
+        <Suspense fallback={""}>
+						<Routes>
+							<Route path="/" element={<Home />} />
+							<Route path="projects" element={<Projects />} />
+						
+
+						</Routes>
+            </Suspense>
+            <Skills/>
+            <Experiences/>
+            <Contact/>
+            <Footer/>
+				</Router>
+      
+			</div>
+      
+		</AnimatePresence>
+     
+    
   );
 };
 

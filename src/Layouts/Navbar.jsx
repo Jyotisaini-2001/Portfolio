@@ -1,4 +1,4 @@
-import {content} from "../Content"
+import {content} from "../content/Content"
 import { useState } from "react";
 import {HiMenuAlt2} from "react-icons/hi";
 import { createElement } from "react";
@@ -8,7 +8,7 @@ const Navbar = () => {
   const [active, setActive] = useState(0);
   return (
     <div className="w-full flex justify-center">
-    <div className="sm:cursor-pointer fixed top-10  left-10 z-[999] rounded-lg bg-white/40 p-2" 
+    <div className="sm:cursor-pointer fixed top-4  left-10 z-[999] rounded-lg bg-white/40 p-2" 
      onClick={() => setShowMenu(!showMenu)}  >
       <HiMenuAlt2 size={34} />
     </div>

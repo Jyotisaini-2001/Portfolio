@@ -2,29 +2,32 @@
   "name": "react_portfolio",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:css": "postcss src/css/tailwind.css -o src/css/main.css"
   },
   "dependencies": {
     "@emailjs/browser": "^3.9.1",
     "aos": "^2.3.4",
+    "framer-motion": "^10.18.0",
+    "postcss-cli": "^11.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.0",
-    "react-icons": "^4.6.0",
+    "react-icons": "^4.12.0",
     "react-modal": "^3.16.1",
+    "react-router-dom": "^6.21.2",
     "swiper": "^8.4.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@vitejs/plugin-react": "^2.2.0",
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.18",
-    "tailwindcss": "^3.2.3",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
     "vite": "^3.2.3"
   }
 }

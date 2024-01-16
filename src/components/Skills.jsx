@@ -1,5 +1,5 @@
 import { createElement, useState } from "react";
-import {content} from "../Content";
+import {content} from "../content/Content";
 import Modal from 'react-modal';
 
 const customStyles = {
@@ -38,10 +38,10 @@ const Skills = () => {
     style={customStyles}>
     <div className="flex items-center gap-2">
      <img className="h-10" src={selectSkill?.logo} alt="" />
-     <h6>{selectSkill?.name}</h6>
+     <h6 className="font-paprika font-bold text-[#253D57] leading-8">{selectSkill?.name}</h6>
     </div>
     <br/>
-    <ul className="list-decimal px-4 font-Poppins sm:text-sm text-xs !leading-7">
+    <ul className="list-decimal px-4 font-poppins sm:text-sm text-xs !leading-7">
     <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
           <li>Lorem ipsum dolor sit, ame.</li>
           <li>Lorem ipsum dolor sit, amet consectetur</li>
@@ -61,8 +61,8 @@ const Skills = () => {
 
     {/* {CONTENT} */}
    <div className="md:container px-5 py-14 " >
-   <h2 className=" title " data-aos="fade-down">{skills.title}</h2>
-   <h4 className="subtitle " data-aos="fade-down">{skills.subtitle}</h4>
+   <h2 className=" md:text-3xl text-2xl font-inria-serif text-5xl font-bold text-ternary-dark dark:text-ternary-light" data-aos="fade-down">{skills.title}</h2>
+   <h4 className="text-[rgba(183,197,211)]  md:text-4xl text-3xl !leading-relaxed font-paprika" data-aos="fade-down">{skills.subtitle}</h4>
    <br/>
    <div className="flex flex-wrap gap-4 justify-center">
     {
@@ -70,11 +70,11 @@ const Skills = () => {
         <div key={i} 
         data-aos="fade-up"
         data-aos-delay={i * 400}
-        className="bg-teal-100 sm:cursor-pointer relative group w-full flex items-center gap-5 p-5 max-w-sm   rounded-md border-2 border-slate-200" >
+        className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark sm:cursor-pointer relative group w-full flex items-center gap-5 p-5 max-w-sm   rounded-md border-2 border-slate-200" >
           <img src={skill.logo} alt="..." className="w-10 group-hover:scale-125 duration-200" />
           <div>
-        <h6>{skill.name}</h6>
-        <p className="italic">{skill.para}</p>
+        <h6 className="font-paprika font-bold text-[#253D57] leading-8 text-ternary-dark dark:text-ternary-light">{skill.name}</h6>
+        <p className="text-[rgba(6,34,63,100)] leading-7  italic font-poppins text-[0.95rem] text-ternary-dark dark:text-ternary-light">{skill.para}</p>
         <div onClick={()=>{
           setSelectSkill(skill);
           openModal();

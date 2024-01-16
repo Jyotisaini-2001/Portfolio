@@ -33,5 +33,6 @@ module.exports = {
 	variants: {
 		extend: { opacity: ['disabled'] },
 	},
+	base: "/https://github.com/Jyotisaini-2001/Portfolio",
 	plugins: ['@tailwindcss/forms'],
 };

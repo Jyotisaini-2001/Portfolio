@@ -1,6 +1,6 @@
 // import components
 import Skills from "./components/Skills";
-import './css/app.css';
+// import './css/app.css';
 import { AnimatePresence } from 'framer-motion';
 import Experiences from "./components/Experiences";
 import Projects from "./components/Projects";

@@ -2,7 +2,7 @@
 import Hero_person from "../assets/images/Hero/person.jpeg";
 
 
-import Git from "../assets/images/Skills/git.png";
+import git from "../assets/images/Skills/Git.png";
 import github from "../assets/images/Skills/github.png";
 import reactjs from "../assets/images/Skills/react.png";
 import tailwind from "../assets/images/Skills/tailwind.webp"
@@ -118,7 +118,7 @@ export const content = {
       {
         name: "Git",
         para: "Lorem ipsum text  dummy",
-        logo: Git,
+        logo: git,
       },
       // {
       //   name: "Python",

@@ -10,7 +10,6 @@ const Contact = () => {
   // Sending Email
   const sendEmail = (e) => {
     e.preventDefault();
-<<<<<<< HEAD
 
     emailjs
       .sendForm(
@@ -18,11 +17,6 @@ const Contact = () => {
       )
       .then(
         (result) => {
-=======
-    //  service_2drpfb5
-    emailjs.sendForm('service_neueflu', 'template_4fx7xwc', form.current, 'aSEElGBtnLZZiZoJs')
-      .then((result) => {
->>>>>>> eb7675939fbc3790e5e680c3b99a53ed614c79c0
           console.log(result.text);
           // Clear all input field values
           form.current.reset();
